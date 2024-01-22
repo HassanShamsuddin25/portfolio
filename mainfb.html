@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> facebook - log in or sign up</title>
+    <link rel="icon" href="C:\Users\fugen\Downloads\fb_icon-removebg-preview.png" type="">
+    <style>
+        * {
+            background-color: rgb(231, 231, 231);
+        }
+
+        .footer-elements:hover {
+            text-decoration: underline;
+        }
+
+        .footer-elements {
+            text-decoration: none;
+        }
+
+        footer * {
+            background-color: white;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #wholefb {
+            height: 530px;
+        }
+
+        .mainhead {
+            color: rgb(77, 77, 223);
+            font-size: 65PX;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 2px solid rgb(231, 231, 231);
+            width: 300px;
+        }
+
+        .firstpara {
+            margin-top: -1px;
+            font-size: 28px;
+            font-family: sans-serif;
+            width: 550px;
+        }
+
+        #maincontainer {
+            border: 1.5px solid white;
+            background-color: white;
+            border-radius: 8px;
+            height: 344px;
+            width: 380px;
+            float: right;
+            margin-right: 324px;
+            margin-top: -223px;
+        }
+
+        .emailwali {
+            opacity: 0.9;
+            font-size: 16px;
+            width: 330px;
+            background-color: white;
+            border: 1px solid rgb(233, 228, 228);
+            border-radius: 6px;
+            padding: 15px 10px 15px 15px;
+            margin-top: 10px;
+            margin-left: 15px;
+            margin-right: 10px;
+            margin-top: 14px;
+            margin-bottom: -1px;
+        }
+
+        .Passwordwali {
+            opacity: 0.9;
+            font-size: 16px;
+            width: 330px;
+            background-color: white;
+            border: 1px solid rgb(233, 228, 228);
+            border-radius: 6px;
+            padding: 15px 10px 15px 10px;
+            margin-top: 10px;
+            margin-left: 15px;
+            margin-right: 10px;
+            margin-top: 14px;
+        }
+
+        .loginwali {
+            color: white;
+            font-size: 16px;
+            width: 355px;
+            background-color: rgb(77, 77, 223);
+            border: 1px solid rgb(233, 228, 228);
+            border-radius: 8px;
+            padding: 5px 10px 8px 10px;
+            margin-top: 14px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+            font-size: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            cursor: pointer;
+        }
+
+        .forgetpass {
+            border: 2px solid rgb(255, 255, 255);
+            background-color: white;
+            color: rgb(102, 102, 202);
+            font-family: sans-serif;
+            font-size: 15px;
+            padding-left: 120px;
+            text-decoration: none;
+        }
+
+        .forgetpass:hover {
+            text-decoration: underline;
+        }
+
+        .createwali {
+            border: 1px solid rgb(37, 161, 37);
+            border-radius: 6px;
+            background-color: rgb(36, 143, 36);
+            color: white;
+            text-decoration: none;
+            padding: 10px 10px 13px 10px;
+            margin-left: 100px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .createwali:hover {
+            background-color: rgb(37, 161, 37);
+
+        }
+
+        .outertwo {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .outertwo:hover {
+            text-decoration: underline;
+        }
+
+        .outerone {
+            width: 350px;
+            font-size: 14px;
+            font-family: sans-serif;
+            margin-left: 600px;
+            margin-top: 28px;
+            float: right;
+            margin-right: 310px;
+        }
+
+        .fbpara {
+            margin-top: 187px;
+            margin-left: 290px;
+            width: 550px;
+        }
+
+        .footerone {
+            background-color: rgb(255, 255, 255);
+            font-size: 12px;
+            font-family: sans-serif;
+            height: 150px;
+            width: 100%;
+            /* padding-left: 295px; */
+            padding-top: 29px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footerone a {
+            color: #8a8d91;
+        }
+
+        .cursor-inherit {
+            cursor: inherit;
+        }
+
+        .zabans {
+            background-color: white;
+            font-size: 12px;
+            padding-left: 20px;
+        }
+
+        .innerfoot {
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .innerfoot:hover {
+            text-decoration: underline;
+        }
+
+        .innerfoot-2 {
+            text-decoration: none;
+        }
+
+        .innerfoot-2:hover {
+            text-decoration: underline;
+        }
+
+        .innerfoot-3 {
+            text-decoration: none;
+        }
+
+        .innerfoot-3:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wholefb">
+        <div class="">
+            <div class="fbpara">
+                <div class="mainhead">
+                    facebook
+                </div>
+                <p class="firstpara">Facebook helps you to connect and share with the people in yuour life.
+                </p>
+            </div>
+            <div id="maincontainer">
+                <input class="emailwali" type="email" placeholder="Email address or phone number" required>
+                <input class="Passwordwali" type="password" placeholder=" Password" required>
+                <!-- <input  type="submit" value="Log in"> -->
+                <button class="loginwali" type="submit"> Log in</button>
+                <a class="forgetpass" href=""> Forgotten password?</a>
+                <!-- hover wala scne s jab ham cursor lekr jae tab undrline hoga  -->
+                <!-- sikhna h ye -->
+                <hr style="width: 350px;margin-top: 20px; opacity: 0.4 ; margin-bottom: 35px;">
+                <a class="createwali" href=""> Create new accout</a>
+
+
+            </div>
+            <div class="outerone">
+                <strong class="outertwo">Create a Page </strong>for celebrity, brand or bussiness.
+            </div>
+        </div>
+    </div>
+
+    <footer class="footerone">
+        <div style="margin: 0px 300px;  width: max-content;display: flex;gap: 13px;align-items: center;">
+            <a class=" cursor-inherit" style="text-decoration: none;" href="">English (UK)</a>
+            <a class="footer-elements" href="">العربية</a>
+            <a class="footer-elements" href="">پښتو </a>
+            <a class="footer-elements" href="">اردو</a>
+            <a class="footer-elements" href="">हिन्दी</a>
+            <a class="footer-elements" href="">বাংলা</a>
+            <a class="footer-elements" href="">ਪੰਜਾਬੀ</a>
+            <a class="footer-elements" href="">فارسی</a>
+            <a class="footer-elements" href="">ગુજરાતી</a>
+            <a class="footer-elements" href="">Deutsch</a>
+            <a class="footer-elements" href=""> Español</a>
+
+
+        </div>
+        <hr style="width: 62%; opacity: 0.3;margin-top: 10px; ">
+        </div>
+
+        <div style="margin: 0px 300px; width: max-content;display: flex; gap: 17px; align-items: center;">
+
+            <a class="innerfoot" href=""> Sign Up </a>
+            <a class="innerfoot" href=""> Log in</a>
+            <a class="innerfoot" href=""> Messenger </a>
+            <a class="innerfoot" href=""> Facebook Lite</a>
+            <a class="innerfoot" href=""> Video </a>
+            <a class="innerfoot" href=""> Places </a>
+            <a class="innerfoot" href="">Games </a>
+            <a class="innerfoot" href=""> Marketplace</a>
+            <a class="innerfoot" href=""> Meta Pay</a>
+            <a class="innerfoot" href=""> Meta Store</a>
+            <a class="innerfoot" href=""> Meta Quest</a>
+            <a class="innerfoot" href=""> Instagram</a>
+            <a class="innerfoot" href=""> Threads</a>
+            <a class="innerfoot" href="">Fundraisers</a>
+        </div>
+        <div
+            style="padding-top: 7px; margin: 0 300px; width: max-content; display: flex; gap: 18px; align-items: center;">
+            <a class="innerfoot-2" href="">Services </a>
+            <a class="innerfoot-2" href="">Voting Information Centre</a>
+            <a class="innerfoot-2" href="">privacy Policy</a>
+            <a class="innerfoot-2" href=""> Privacy Centre</a>
+            <a class="innerfoot-2" href="">Groups</a>
+            <a class="innerfoot-2" href="">About</a>
+            <a class="innerfoot-2" href="">Create ad</a>
+            <a class="innerfoot-2" href="">Create page</a>
+            <a class="innerfoot-2" href="">Developers</a>
+            <a class="innerfoot-2" href="">Careers</a>
+            <a class="innerfoot-2" href="">Cookies</a>
+            <a class="innerfoot-2" href="">AdChoices</a>
+
+        </div>
+        <div style="padding-top: 7px; margin: 0 300px;width: max-content;display: flex;gap: 18px;align-items: center;">
+            <a class="innerfoot-3" href="">Terms</a>
+            <a class="innerfoot-3" href="">Help</a>
+            <a class="innerfoot-3" href="">Contact uploading and non-users</a>
+        </div>
+        <div>
+            <a style="cursor: inherit; text-decoration: none;margin: 0 300px; width: max-content;display: flex;align-items: center; margin-top: 25px;font-size: 11px;"
+                href="">Meta @ 2023</a>
+
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
